@@ -2,301 +2,373 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Defendex — Privacy Policy | CORTEX</title>
-<meta name="description" content="Privacy Policy for the Defendex mobile application by SIA KORTEKS (Cortex), Riga, Latvia.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Defendex — Privātuma politika / Политика конфиденциальности / Privacy Policy · CORTEX</title>
+<meta name="description" content="Privātuma politika un datu dzēšanas kārtība mobilajai lietotnei Defendex (CORTEX).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --color-primary:#1A2B4A;
-  --color-accent:#E8401C;
-  --color-bg:#F4F6F9;
-  --color-surface:#FFFFFF;
-  --color-text:#1C1C1E;
-  --color-text-muted:#6B7280;
-  --color-border:#E5E7EB;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--color-bg);color:var(--color-text);line-height:1.6}
-header{background:var(--color-primary);color:#fff;position:sticky;top:0;z-index:10}
-.nav{max-width:860px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;font-size:1.25rem;letter-spacing:-0.02em}
-.logo span{color:var(--color-accent)}
-.lang{display:flex;gap:6px}
-.lang button{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;padding:5px 12px;border-radius:8px;cursor:pointer;font-size:.85rem;font-family:inherit;transition:background .15s,border-color .15s}
-.lang button:hover{background:rgba(255,255,255,.12)}
-.lang button.active{background:var(--color-accent);border-color:var(--color-accent)}
-main{max-width:860px;margin:0 auto;padding:36px 20px 64px}
-.card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:12px;padding:36px 40px;box-shadow:0 1px 3px rgba(26,43,74,.06)}
-h1{font-size:1.7rem;font-weight:800;letter-spacing:-0.02em;color:var(--color-primary);margin-bottom:6px}
-.meta{color:var(--color-text-muted);font-size:.9rem;margin-bottom:26px}
-h2{font-size:1.12rem;font-weight:700;letter-spacing:-0.01em;color:var(--color-primary);margin:26px 0 8px}
-p{margin-bottom:12px}
-ul{margin:0 0 12px 22px}
-li{margin-bottom:6px}
-.contact{background:var(--color-bg);border-radius:10px;padding:16px 20px;margin-top:8px}
-footer{max-width:860px;margin:0 auto;padding:0 20px 36px;color:var(--color-text-muted);font-size:.85rem;text-align:center}
-[hidden]{display:none!important}
-@media(max-width:768px){.card{padding:24px 20px}h1{font-size:1.4rem}}
+  :root{
+    --color-primary:#1A2B4A; --color-accent:#E8401C; --color-accent-alt:#F5A623;
+    --color-bg:#F4F6F9; --color-surface:#FFFFFF; --color-text:#1C1C1E;
+    --color-text-muted:#6B7280; --color-border:#E5E7EB;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--color-bg);color:var(--color-text);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6}
+  a{color:var(--color-primary)}
+  /* navbar */
+  .nav{position:sticky;top:0;z-index:10;background:var(--color-surface);border-bottom:1px solid var(--color-border)}
+  .nav-in{max-width:1080px;margin:0 auto;padding:0 20px;height:64px;display:flex;align-items:center;gap:24px}
+  .logo{font-weight:800;letter-spacing:.08em;color:var(--color-primary);text-decoration:none;font-size:20px}
+  .logo span{color:var(--color-accent)}
+  .menu{display:flex;gap:20px;margin-left:auto}
+  .menu a{text-decoration:none;color:var(--color-text-muted);font-weight:500;font-size:14px}
+  .menu a:hover{color:var(--color-primary)}
+  .lang{display:flex;gap:4px;border:1px solid var(--color-border);border-radius:8px;padding:3px}
+  .lang button{border:0;background:transparent;padding:5px 9px;border-radius:6px;font:600 13px 'Inter',sans-serif;
+    color:var(--color-text-muted);cursor:pointer}
+  .lang button.on{background:var(--color-primary);color:#fff}
+  @media(max-width:768px){.menu{display:none}}
+  /* hero */
+  .hero{background:var(--color-primary);color:#fff;padding:56px 20px}
+  .hero-in{max-width:1080px;margin:0 auto}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--color-accent-alt);margin:0 0 10px}
+  h1{font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-.02em;margin:0 0 12px;line-height:1.15}
+  .hero p{margin:0;max-width:720px;color:#C9D2E3}
+  .hero .meta{margin-top:18px;font-size:14px;color:#9FB0CC}
+  /* layout */
+  .wrap{max-width:1080px;margin:0 auto;padding:36px 20px 64px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px}
+  @media(max-width:860px){.wrap{grid-template-columns:1fr}}
+  .toc{position:sticky;top:84px;align-self:start;background:var(--color-surface);border:1px solid var(--color-border);
+    border-radius:12px;padding:16px}
+  .toc b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:8px}
+  .toc a{display:block;padding:6px 0;text-decoration:none;font-size:14px;color:var(--color-text)}
+  .toc a:hover{color:var(--color-accent)}
+  .toc a.del{margin-top:10px;padding-top:12px;border-top:1px solid var(--color-border);font-weight:600;color:var(--color-accent)}
+  @media(max-width:860px){.toc{position:static}}
+  .card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:12px;
+    box-shadow:0 1px 2px rgba(26,43,74,.04),0 6px 20px rgba(26,43,74,.05);padding:28px;margin-bottom:24px}
+  h2{font-size:22px;font-weight:700;letter-spacing:-.02em;margin:0 0 14px;color:var(--color-primary)}
+  h3{font-size:17px;font-weight:600;margin:24px 0 8px;scroll-margin-top:84px}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px;padding-left:22px}
+  li{margin:4px 0}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;margin:10px 0 16px}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--color-border);vertical-align:top}
+  th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-muted)}
+  .tbl{overflow-x:auto}
+  .badge{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;background:#E6F4EA;color:#1B7A3D}
+  .badge.no{background:#FBEAEA;color:#B42318}
+  .note{border-left:4px solid var(--color-accent-alt);background:#FFF8E8;padding:12px 16px;border-radius:0 10px 10px 0;margin:14px 0}
+  .del-card{border-left:4px solid var(--color-accent)}
+  .steps{counter-reset:s;list-style:none;padding:0}
+  .steps li{counter-increment:s;position:relative;padding-left:44px;margin:12px 0}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;
+    background:var(--color-accent);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .btn{display:inline-block;background:var(--color-accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;
+    border-radius:10px;transition:transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(232,64,28,.25)}
+  .btn.sec{background:transparent;color:var(--color-primary);border:2px solid var(--color-primary)}
+  .contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:8px}
+  .contact div{background:var(--color-bg);border-radius:10px;padding:14px}
+  .contact b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:4px}
+  footer{background:var(--color-primary);color:#C9D2E3;padding:32px 20px;font-size:14px}
+  .foot-in{max-width:1080px;margin:0 auto;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}
+  footer a{color:#fff}
+  [hidden]{display:none!important}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="nav">
-    <div class="logo">COR<span>TEX</span></div>
-    <div class="lang">
-      <button data-lang="en" class="active">EN</button>
-      <button data-lang="lv">LV</button>
-      <button data-lang="ru">RU</button>
+<nav class="nav">
+  <div class="nav-in">
+    <a class="logo" href="https://cortex.eu/">CORTE<span>X</span></a>
+    <div class="menu">
+      <a href="https://cortex.eu/products/" data-i18n="nav_products">Products</a>
+      <a href="https://cortex.eu/support.html" data-i18n="nav_support">Support</a>
+      <a href="https://cortex.eu/contact.html" data-i18n="nav_contact">Contact</a>
     </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="lv">LV</button><button data-lang="ru">RU</button><button data-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-in">
+    <p class="eyebrow" data-i18n="eyebrow">Mobile app · Defendex</p>
+    <h1 data-i18n="title">Privacy Policy</h1>
+    <p data-i18n="lead">How the Defendex app and the CORTEX monitoring platform handle your data — and how to delete it.</p>
+    <p class="meta"><span data-i18n="effective">Effective date</span>: 16.09.2026 · <span data-i18n="version">Version</span> 1.0</p>
   </div>
 </header>
 
-<main>
+<div class="wrap">
+  <aside class="toc">
+    <b data-i18n="toc">Contents</b>
+    <a href="#who" data-i18n="s1">1. Who we are</a>
+    <a href="#data" data-i18n="s2">2. What data we process</a>
+    <a href="#why" data-i18n="s3">3. Why and on what basis</a>
+    <a href="#third" data-i18n="s4">4. Third parties</a>
+    <a href="#store" data-i18n="s5">5. Storage and security</a>
+    <a href="#rights" data-i18n="s6">6. Your rights</a>
+    <a href="#perm" data-i18n="s7">7. App permissions</a>
+    <a href="#changes" data-i18n="s8">8. Changes</a>
+    <a href="#delete" class="del" data-i18n="s9">Delete account &amp; data</a>
+  </aside>
 
-<!-- ==================== ENGLISH ==================== -->
-<div class="card" id="pp-en">
-  <h1>Defendex — Privacy Policy</h1>
-  <div class="meta">Effective date: 12 July 2026 · Application: Defendex (eu.cortex.defendex)</div>
+  <main id="privacy">
+    <section class="card">
+      <h2 data-i18n="h_policy">Privacy Policy of the Defendex app</h2>
+      <p data-i18n="intro">Defendex is a mobile application for owners of security systems built on CORTEX equipment. It shows the status of your sites, delivers alarm notifications and lets you arm and disarm your system. This policy explains which data is processed when you use the app, for what purpose, and what choices you have.</p>
 
-  <p>This Privacy Policy describes how SIA "KORTEKS" ("Cortex", "we") collects, uses and protects information when you use the Defendex mobile application (the "App"). The App is a client for the Defendex security alarm monitoring platform and allows you to control and monitor security systems installed at your sites.</p>
+      <h3 id="who" data-i18n="s1">1. Who we are</h3>
+      <p data-i18n="who_1">The Defendex app and the monitoring platform behind it are developed and operated by <strong>SIA CORTEX</strong>, Liksnas iela 7, Rīga, Latvia (hereinafter "CORTEX", "we").</p>
+      <p data-i18n="who_2">Your account and access to specific sites are created by the <strong>security company that services your site</strong>. For account data and site events, that company is the data controller; CORTEX operates the platform on its behalf as a processor and is the controller for the technical data described below (e.g. push tokens).</p>
 
-  <h2>1. Data Controller</h2>
-  <div class="contact">
-    <p style="margin:0">SIA "KORTEKS"<br>Līksnas iela 7, Rīga, Latvia<br>Phone: +371 67 505 603<br>Web: www.cortex.eu</p>
-  </div>
+      <h3 id="data" data-i18n="s2">2. What data we process</h3>
+      <div class="tbl"><table>
+        <thead><tr><th data-i18n="t_data">Data</th><th data-i18n="t_source">Source</th><th data-i18n="t_purpose">Purpose</th></tr></thead>
+        <tbody>
+          <tr><td data-i18n="d1">Username and password (password is stored only as a hash)</td><td data-i18n="d1s">Entered by you / issued by the security company</td><td data-i18n="d1p">Sign-in and access to your sites</td></tr>
+          <tr><td data-i18n="d2">Push notification token (an identifier of the app installation on your device) and platform (Android/iOS)</td><td data-i18n="d2s">Generated by Google Firebase on your device</td><td data-i18n="d2p">Delivering alarm and status notifications to your phone</td></tr>
+          <tr><td data-i18n="d3">Site events and statuses (armed/disarmed, alarms, zones, mains and battery, communication tests)</td><td data-i18n="d3s">Your security equipment via the monitoring platform</td><td data-i18n="d3p">Showing status and event history; sending notifications</td></tr>
+          <tr><td data-i18n="d4">Commands you send (arm/disarm) with time and user ID</td><td data-i18n="d4s">Your actions in the app</td><td data-i18n="d4p">Executing the command and keeping an audit log of who armed/disarmed the site</td></tr>
+          <tr><td data-i18n="d5">Notification preferences and interface language</td><td data-i18n="d5s">Your settings in the app</td><td data-i18n="d5p">Showing the app the way you configured it</td></tr>
+          <tr><td data-i18n="d6">Technical request data (IP address, time, app version)</td><td data-i18n="d6s">Automatically, when the app connects to the server</td><td data-i18n="d6p">Security, troubleshooting, protection against abuse</td></tr>
+        </tbody>
+      </table></div>
+      <p data-i18n="data_not"><strong>We do not collect</strong> your location, contacts, photos, files, browsing history, health or financial data. The camera is used only to scan a QR code on your device; the image is not sent anywhere. Video from site cameras is streamed for viewing only and is not stored on our servers by the app.</p>
 
-  <h2>2. Information We Collect</h2>
-  <ul>
-    <li><strong>Account data</strong> — username and password you use to sign in. Passwords are transmitted over an encrypted connection; the App stores only a session token (JWT) on your device.</li>
-    <li><strong>Security system data</strong> — alarm and system events, arm/disarm commands, partition and zone status, and event history related to the sites linked to your account. Processing this data is the core function of the App.</li>
-    <li><strong>Device and technical data</strong> — device model, operating system version, application version and interface language, used for compatibility and troubleshooting.</li>
-  </ul>
+      <h3 id="why" data-i18n="s3">3. Why and on what basis</h3>
+      <ul>
+        <li data-i18n="why_1"><strong>Performance of the service</strong> (GDPR Art. 6(1)(b)): sign-in, status display, arming/disarming, notifications — this is what the app is for.</li>
+        <li data-i18n="why_2"><strong>Legitimate interest</strong> (Art. 6(1)(f)): security of the platform, technical logs, audit log of commands — so that both you and the security company can see who did what with the system.</li>
+        <li data-i18n="why_3"><strong>Your choice</strong>: push notifications require your permission on the device; you can switch categories on the "Notifications" screen or revoke the permission in the system settings at any time.</li>
+      </ul>
 
-  <h2>3. Camera, Biometrics and Video Streams</h2>
-  <ul>
-    <li><strong>Camera</strong> is used solely for scanning QR codes during setup. Camera images are processed on the device and are not stored or transmitted.</li>
-    <li><strong>Biometric authentication</strong> (fingerprint / face unlock) is performed entirely on your device by the operating system. We never receive, store or have access to your biometric data.</li>
-    <li><strong>Video streams</strong> from site cameras are displayed live in the App. The App does not record or store video.</li>
-  </ul>
+      <h3 id="third" data-i18n="s4">4. Third parties</h3>
+      <ul>
+        <li data-i18n="third_1"><strong>Google Firebase Cloud Messaging</strong> (Google Ireland Ltd.) — delivers push notifications. Google receives the push token and the notification content (site name and event text) solely to deliver it to your device. Google acts as our processor. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy</a>.</li>
+        <li data-i18n="third_2"><strong>Your security company</strong> — sees the events and statuses of the sites it services and the commands sent to them (this is the essence of the monitoring service).</li>
+        <li data-i18n="third_3">We do not sell personal data and do not share it with anyone for advertising.</li>
+      </ul>
 
-  <h2>4. What We Do Not Collect</h2>
-  <p>The App contains no advertising, no third-party analytics or tracking SDKs, and does not collect your precise location. We do not sell personal data and do not use it for marketing profiling.</p>
+      <h3 id="store" data-i18n="s5">5. Storage and security</h3>
+      <ul>
+        <li data-i18n="store_1">The data is stored on servers located in the European Union.</li>
+        <li data-i18n="store_2">Connection between the app and the server is encrypted (HTTPS/TLS). Passwords are stored as hashes; sign-in credentials on the device are kept in the secure storage (Android Keystore).</li>
+        <li data-i18n="store_3">Retention: account data — while the account exists; push token — until you sign out or uninstall the app (invalid tokens are removed automatically); site events — for the retention period set by your security company's contract, after which they are deleted or anonymised.</li>
+      </ul>
 
-  <h2>5. How We Use Information</h2>
-  <ul>
-    <li>to provide the service: display system status, deliver event information and execute your commands;</li>
-    <li>to ensure security of the platform and prevent unauthorised access;</li>
-    <li>to provide technical support and diagnose faults.</li>
-  </ul>
+      <h3 id="rights" data-i18n="s6">6. Your rights</h3>
+      <p data-i18n="rights_1">Under the GDPR you may request access to your data, its rectification or erasure, restriction of processing, data portability, and object to processing based on legitimate interest. You also have the right to lodge a complaint with the supervisory authority — in Latvia, Datu valsts inspekcija (dvi.gov.lv).</p>
+      <p data-i18n="rights_2">To exercise these rights contact your security company or CORTEX using the details below. We respond within 30 days.</p>
 
-  <h2>6. Legal Basis (GDPR)</h2>
-  <p>We process personal data on the basis of: performance of a contract (provision of the monitoring service, Art. 6(1)(b) GDPR); our legitimate interests in ensuring security of the platform (Art. 6(1)(f)); and compliance with legal obligations (Art. 6(1)(c)).</p>
+      <h3 id="perm" data-i18n="s7">7. App permissions</h3>
+      <div class="tbl"><table>
+        <thead><tr><th data-i18n="t_perm">Permission</th><th data-i18n="t_why">Why</th></tr></thead>
+        <tbody>
+          <tr><td>INTERNET</td><td data-i18n="p1">Connection to the monitoring server</td></tr>
+          <tr><td>POST_NOTIFICATIONS</td><td data-i18n="p2">Showing push notifications (Android 13+)</td></tr>
+          <tr><td>CAMERA</td><td data-i18n="p3">Scanning a QR code when adding a site — locally only</td></tr>
+          <tr><td>USE_BIOMETRIC</td><td data-i18n="p4">Optional sign-in by fingerprint/face — processed by the OS, biometric data never leaves the device</td></tr>
+          <tr><td>VIBRATE</td><td data-i18n="p5">Vibration on alarm</td></tr>
+        </tbody>
+      </table></div>
 
-  <h2>7. Storage and Security</h2>
-  <p>Data is stored on servers located in the European Union. Connections between the App and the servers are encrypted (TLS). Access to data is restricted by authentication and role-based access controls.</p>
+      <h3 id="changes" data-i18n="s8">8. Changes</h3>
+      <p data-i18n="changes_1">We may update this policy when the app changes. The current version is always available at this address; the effective date is shown at the top of the page. Material changes will be announced in the app.</p>
+    </section>
 
-  <h2>8. Sharing of Information</h2>
-  <ul>
-    <li><strong>Your security service provider</strong> — alarm events from your sites are transmitted to the monitoring station responsible for your site under your service agreement; this is an inherent part of the service.</li>
-    <li><strong>Infrastructure providers</strong> — hosting and communication providers acting as processors on our behalf.</li>
-    <li><strong>Legal requirements</strong> — where disclosure is required by applicable law or a lawful request of a public authority.</li>
-  </ul>
-  <p>We do not share personal data with any other third parties.</p>
+    <section class="card del-card" id="delete">
+      <h2 data-i18n="h_delete">Deleting your account and data</h2>
+      <p data-i18n="del_intro">You can request deletion of your Defendex account and the personal data associated with it at any time.</p>
+      <ol class="steps">
+        <li data-i18n="del_1"><strong>Sign out of the app</strong> ("Sign out" in the menu). This immediately removes the push token from the server — notifications to this phone stop.</li>
+        <li data-i18n="del_2"><strong>Send a deletion request</strong> to your security company or to CORTEX (contacts below) with the subject "Defendex — delete account" and your username. No other data is needed.</li>
+        <li data-i18n="del_3"><strong>Within 30 days</strong> we delete the account, its site assignments, notification settings and push tokens. Site event history stays with the security company for the contractual retention period (it is data about the site, not about you) and is anonymised from your account.</li>
+        <li data-i18n="del_4"><strong>Uninstall the app</strong> to remove all locally stored data (settings, cached events, saved credentials).</li>
+      </ol>
+      <div class="note" data-i18n="del_note">If the account was created for you by a security company, it may need to confirm the request — deletion means losing access to monitoring of your site.</div>
+      <p><a class="btn" href="mailto:info@cortex.lv?subject=Defendex%20%E2%80%94%20delete%20account" data-i18n="del_btn">Send deletion request</a></p>
+    </section>
 
-  <h2>9. Data Retention</h2>
-  <p>Account data is retained while your account is active. Event history is retained for the period required by the monitoring service agreement and applicable law. Upon termination of the account, data is deleted or anonymised within a reasonable period, unless a longer retention is required by law.</p>
-
-  <h2>10. Your Rights</h2>
-  <p>Under the GDPR you have the right to access, rectify or erase your personal data, restrict or object to its processing, and receive it in a portable format. To exercise these rights, contact us using the details above. You also have the right to lodge a complaint with the Data State Inspectorate of Latvia (Datu valsts inspekcija, www.dvi.gov.lv).</p>
-
-  <h2>11. Children</h2>
-  <p>The App is intended for users of security services and is not directed at children under 16. We do not knowingly collect data from children.</p>
-
-  <h2>11.1 How to Request Data Deletion</h2>
-  <p>To request deletion of your account data, follow these steps:</p>
-  <ul>
-    <li><strong>Step 1.</strong> Send an email to <strong>info@cortex.lv</strong> with the subject "Data deletion request".</li>
-    <li><strong>Step 2.</strong> In the email, state your account login (username) used in the Defendex app so we can identify your data.</li>
-    <li><strong>Step 3.</strong> We will verify the request and delete your personal account data <strong>within 30 days</strong>.</li>
-  </ul>
-  <p>Please note: alarm and system event records related to a monitored site may be retained for the period required by the monitoring service agreement and applicable law, even after the account is deleted.</p>
-
-  <h2>12. Changes to This Policy</h2>
-  <p>We may update this Policy from time to time. The current version is always available at this address; the effective date is indicated at the top of the page.</p>
+    <section class="card" id="contact">
+      <h2 data-i18n="h_contact">Contact</h2>
+      <div class="contact">
+        <div><b data-i18n="c_company">Operator of the platform</b>SIA CORTEX<br>Liksnas iela 7, Rīga, LV-1003, Latvia</div>
+        <div><b data-i18n="c_phone">Phone</b><a href="tel:+37167505603">+371 67 505 603</a></div>
+        <div><b data-i18n="c_email">Privacy requests</b><a href="mailto:info@cortex.lv">info@cortex.lv</a></div>
+        <div><b data-i18n="c_web">Website</b><a href="https://cortex.eu/">cortex.eu</a></div>
+      </div>
+    </section>
+  </main>
 </div>
-
-<!-- ==================== LATVIAN ==================== -->
-<div class="card" id="pp-lv" hidden>
-  <h1>Defendex — Privātuma politika</h1>
-  <div class="meta">Spēkā no: 2026. gada 12. jūlija · Lietotne: Defendex (eu.cortex.defendex)</div>
-
-  <p>Šī Privātuma politika apraksta, kā SIA "KORTEKS" ("Cortex", "mēs") vāc, izmanto un aizsargā informāciju, kad jūs lietojat mobilo lietotni Defendex ("Lietotne"). Lietotne ir Defendex apsardzes signalizācijas monitoringa platformas klients, kas ļauj vadīt un uzraudzīt jūsu objektos uzstādītās drošības sistēmas.</p>
-
-  <h2>1. Datu pārzinis</h2>
-  <div class="contact">
-    <p style="margin:0">SIA "KORTEKS"<br>Līksnas iela 7, Rīga, Latvija<br>Tālrunis: +371 67 505 603<br>Tīmeklis: www.cortex.eu</p>
-  </div>
-
-  <h2>2. Kādu informāciju mēs vācam</h2>
-  <ul>
-    <li><strong>Konta dati</strong> — lietotājvārds un parole, ko izmantojat pieteikšanai. Paroles tiek pārraidītas šifrētā savienojumā; Lietotne ierīcē glabā tikai sesijas marķieri (JWT).</li>
-    <li><strong>Drošības sistēmas dati</strong> — trauksmes un sistēmas notikumi, ieslēgšanas/atslēgšanas komandas, sadaļu un zonu statuss, kā arī ar jūsu kontu saistīto objektu notikumu vēsture. Šo datu apstrāde ir Lietotnes pamatfunkcija.</li>
-    <li><strong>Ierīces un tehniskie dati</strong> — ierīces modelis, operētājsistēmas versija, lietotnes versija un saskarnes valoda; tie tiek izmantoti saderībai un problēmu novēršanai.</li>
-  </ul>
-
-  <h2>3. Kamera, biometrija un video straumes</h2>
-  <ul>
-    <li><strong>Kamera</strong> tiek izmantota tikai QR kodu skenēšanai iestatīšanas laikā. Kameras attēli tiek apstrādāti ierīcē un netiek saglabāti vai pārsūtīti.</li>
-    <li><strong>Biometriskā autentifikācija</strong> (pirksta nospiedums / sejas atpazīšana) pilnībā notiek jūsu ierīcē ar operētājsistēmas līdzekļiem. Mēs nekad nesaņemam un neglabājam jūsu biometriskos datus.</li>
-    <li><strong>Video straumes</strong> no objektu kamerām Lietotnē tiek rādītas tiešraidē. Lietotne video neieraksta un neglabā.</li>
-  </ul>
-
-  <h2>4. Ko mēs nevācam</h2>
-  <p>Lietotnē nav reklāmas, trešo pušu analītikas vai izsekošanas rīku, un tā nevāc jūsu precīzu atrašanās vietu. Mēs nepārdodam personas datus un neizmantojam tos mārketinga profilēšanai.</p>
-
-  <h2>5. Kā mēs izmantojam informāciju</h2>
-  <ul>
-    <li>pakalpojuma nodrošināšanai: sistēmas statusa attēlošanai, notikumu informācijas piegādei un jūsu komandu izpildei;</li>
-    <li>platformas drošībai un nesankcionētas piekļuves novēršanai;</li>
-    <li>tehniskajam atbalstam un kļūmju diagnostikai.</li>
-  </ul>
-
-  <h2>6. Tiesiskais pamats (VDAR)</h2>
-  <p>Personas datus mēs apstrādājam, pamatojoties uz: līguma izpildi (monitoringa pakalpojuma sniegšana, VDAR 6. panta 1. punkta b) apakšpunkts); mūsu leģitīmajām interesēm platformas drošības nodrošināšanā (6. panta 1. punkta f) apakšpunkts); un juridisko pienākumu izpildi (6. panta 1. punkta c) apakšpunkts).</p>
-
-  <h2>7. Glabāšana un drošība</h2>
-  <p>Dati tiek glabāti serveros Eiropas Savienībā. Savienojumi starp Lietotni un serveriem ir šifrēti (TLS). Piekļuve datiem ir ierobežota ar autentifikāciju un lomu piekļuves kontroli.</p>
-
-  <h2>8. Informācijas nodošana</h2>
-  <ul>
-    <li><strong>Jūsu apsardzes pakalpojumu sniedzējs</strong> — trauksmes notikumi no jūsu objektiem tiek nodoti monitoringa centrālei, kas atbild par jūsu objektu saskaņā ar pakalpojuma līgumu; tā ir pakalpojuma neatņemama daļa.</li>
-    <li><strong>Infrastruktūras nodrošinātāji</strong> — mitināšanas un sakaru pakalpojumu sniedzēji, kas darbojas kā apstrādātāji mūsu uzdevumā.</li>
-    <li><strong>Juridiskās prasības</strong> — ja izpaušanu pieprasa piemērojamie tiesību akti vai likumīgs valsts iestādes pieprasījums.</li>
-  </ul>
-  <p>Citām trešajām personām personas datus mēs nenododam.</p>
-
-  <h2>9. Datu glabāšanas ilgums</h2>
-  <p>Konta dati tiek glabāti, kamēr jūsu konts ir aktīvs. Notikumu vēsture tiek glabāta monitoringa pakalpojuma līgumā un piemērojamos tiesību aktos noteikto laiku. Pēc konta izbeigšanas dati tiek dzēsti vai anonimizēti saprātīgā termiņā, ja vien ilgāku glabāšanu nepieprasa likums.</p>
-
-  <h2>10. Jūsu tiesības</h2>
-  <p>Saskaņā ar VDAR jums ir tiesības piekļūt saviem personas datiem, tos labot vai dzēst, ierobežot apstrādi vai iebilst pret to, kā arī saņemt datus pārnesamā formātā. Lai īstenotu šīs tiesības, sazinieties ar mums, izmantojot iepriekš norādīto kontaktinformāciju. Jums ir arī tiesības iesniegt sūdzību Datu valsts inspekcijā (www.dvi.gov.lv).</p>
-
-  <h2>11. Bērni</h2>
-  <p>Lietotne ir paredzēta apsardzes pakalpojumu lietotājiem un nav adresēta bērniem, kas jaunāki par 16 gadiem. Mēs apzināti nevācam bērnu datus.</p>
-
-  <h2>11.1 Kā pieprasīt datu dzēšanu</h2>
-  <p>Lai pieprasītu sava konta datu dzēšanu, veiciet šādas darbības:</p>
-  <ul>
-    <li><strong>1. solis.</strong> Nosūtiet e-pastu uz <strong>info@cortex.lv</strong> ar tēmu "Datu dzēšanas pieprasījums".</li>
-    <li><strong>2. solis.</strong> E-pastā norādiet sava konta pieteikšanās vārdu (lietotājvārdu), ko izmantojat Defendex lietotnē, lai mēs varētu identificēt jūsu datus.</li>
-    <li><strong>3. solis.</strong> Mēs pārbaudīsim pieprasījumu un dzēsīsim jūsu personas konta datus <strong>30 dienu laikā</strong>.</li>
-  </ul>
-  <p>Lūdzu, ņemiet vērā: trauksmes un sistēmas notikumu ieraksti, kas saistīti ar uzraugāmo objektu, var tikt glabāti monitoringa pakalpojuma līgumā un piemērojamos tiesību aktos noteikto laiku arī pēc konta dzēšanas.</p>
-
-  <h2>12. Politikas izmaiņas</h2>
-  <p>Mēs laiku pa laikam varam atjaunināt šo Politiku. Aktuālā versija vienmēr ir pieejama šajā adresē; spēkā stāšanās datums ir norādīts lapas augšā.</p>
-</div>
-
-<!-- ==================== RUSSIAN ==================== -->
-<div class="card" id="pp-ru" hidden>
-  <h1>Defendex — Политика конфиденциальности</h1>
-  <div class="meta">Дата вступления в силу: 12 июля 2026 г. · Приложение: Defendex (eu.cortex.defendex)</div>
-
-  <p>Настоящая Политика конфиденциальности описывает, как SIA "KORTEKS" («Cortex», «мы») собирает, использует и защищает информацию при использовании вами мобильного приложения Defendex («Приложение»). Приложение является клиентом платформы мониторинга охранной сигнализации Defendex и позволяет управлять системами безопасности, установленными на ваших объектах, и контролировать их состояние.</p>
-
-  <h2>1. Оператор данных</h2>
-  <div class="contact">
-    <p style="margin:0">SIA "KORTEKS"<br>Līksnas iela 7, Rīga, Латвия<br>Телефон: +371 67 505 603<br>Сайт: www.cortex.eu</p>
-  </div>
-
-  <h2>2. Какую информацию мы собираем</h2>
-  <ul>
-    <li><strong>Данные учётной записи</strong> — имя пользователя и пароль, используемые для входа. Пароли передаются по зашифрованному соединению; на устройстве Приложение хранит только сессионный токен (JWT).</li>
-    <li><strong>Данные охранной системы</strong> — тревожные и системные события, команды постановки/снятия с охраны, состояние разделов и зон, история событий по объектам, привязанным к вашей учётной записи. Обработка этих данных — основная функция Приложения.</li>
-    <li><strong>Технические данные устройства</strong> — модель устройства, версия операционной системы, версия приложения и язык интерфейса; используются для совместимости и диагностики.</li>
-  </ul>
-
-  <h2>3. Камера, биометрия и видеопотоки</h2>
-  <ul>
-    <li><strong>Камера</strong> используется исключительно для сканирования QR-кодов при настройке. Изображения обрабатываются на устройстве и не сохраняются и не передаются.</li>
-    <li><strong>Биометрическая аутентификация</strong> (отпечаток пальца / распознавание лица) выполняется полностью на вашем устройстве средствами операционной системы. Мы не получаем и не храним ваши биометрические данные.</li>
-    <li><strong>Видеопотоки</strong> с камер объектов отображаются в Приложении в реальном времени. Приложение не записывает и не хранит видео.</li>
-  </ul>
-
-  <h2>4. Что мы не собираем</h2>
-  <p>В Приложении нет рекламы, сторонней аналитики и трекеров; оно не собирает данные о вашем точном местоположении. Мы не продаём персональные данные и не используем их для маркетингового профилирования.</p>
-
-  <h2>5. Как мы используем информацию</h2>
-  <ul>
-    <li>для предоставления сервиса: отображения состояния системы, доставки информации о событиях и выполнения ваших команд;</li>
-    <li>для обеспечения безопасности платформы и предотвращения несанкционированного доступа;</li>
-    <li>для технической поддержки и диагностики неисправностей.</li>
-  </ul>
-
-  <h2>6. Правовые основания (GDPR)</h2>
-  <p>Мы обрабатываем персональные данные на основании: исполнения договора (предоставление услуги мониторинга, ст. 6(1)(b) GDPR); наших законных интересов в обеспечении безопасности платформы (ст. 6(1)(f)); а также исполнения юридических обязанностей (ст. 6(1)(c)).</p>
-
-  <h2>7. Хранение и защита</h2>
-  <p>Данные хранятся на серверах, расположенных в Европейском союзе. Соединения между Приложением и серверами шифруются (TLS). Доступ к данным ограничен аутентификацией и ролевой моделью доступа.</p>
-
-  <h2>8. Передача информации</h2>
-  <ul>
-    <li><strong>Ваш поставщик охранных услуг</strong> — тревожные события с ваших объектов передаются на пульт централизованного наблюдения, отвечающий за ваш объект по договору обслуживания; это неотъемлемая часть сервиса.</li>
-    <li><strong>Инфраструктурные провайдеры</strong> — поставщики хостинга и связи, действующие как обработчики по нашему поручению.</li>
-    <li><strong>Требования закона</strong> — если раскрытие требуется применимым законодательством или законным запросом государственного органа.</li>
-  </ul>
-  <p>Иным третьим лицам персональные данные не передаются.</p>
-
-  <h2>9. Сроки хранения</h2>
-  <p>Данные учётной записи хранятся, пока ваша учётная запись активна. История событий хранится в течение срока, предусмотренного договором мониторинга и применимым законодательством. После прекращения учётной записи данные удаляются или обезличиваются в разумный срок, если более длительное хранение не требуется законом.</p>
-
-  <h2>10. Ваши права</h2>
-  <p>В соответствии с GDPR вы вправе получить доступ к своим персональным данным, исправить или удалить их, ограничить обработку или возразить против неё, а также получить данные в переносимом формате. Для реализации этих прав свяжитесь с нами по контактам выше. Вы также вправе подать жалобу в Государственную инспекцию данных Латвии (Datu valsts inspekcija, www.dvi.gov.lv).</p>
-
-  <h2>11. Дети</h2>
-  <p>Приложение предназначено для пользователей охранных услуг и не адресовано детям младше 16 лет. Мы сознательно не собираем данные детей.</p>
-
-  <h2>11.1 Как запросить удаление данных</h2>
-  <p>Чтобы запросить удаление данных вашей учётной записи, выполните следующие шаги:</p>
-  <ul>
-    <li><strong>Шаг 1.</strong> Отправьте письмо на адрес <strong>info@cortex.lv</strong> с темой «Запрос на удаление данных».</li>
-    <li><strong>Шаг 2.</strong> В письме укажите логин (имя пользователя) вашей учётной записи в приложении Defendex, чтобы мы могли идентифицировать ваши данные.</li>
-    <li><strong>Шаг 3.</strong> Мы проверим запрос и удалим персональные данные вашей учётной записи <strong>в течение 30 дней</strong>.</li>
-  </ul>
-  <p>Обратите внимание: записи тревожных и системных событий, связанные с охраняемым объектом, могут храниться в течение срока, предусмотренного договором мониторинга и применимым законодательством, даже после удаления учётной записи.</p>
-
-  <h2>12. Изменения Политики</h2>
-  <p>Мы можем время от времени обновлять настоящую Политику. Актуальная версия всегда доступна по этому адресу; дата вступления в силу указана в начале страницы.</p>
-</div>
-
-</main>
 
 <footer>
-  SIA "KORTEKS" · Līksnas iela 7, Rīga, Latvia · +371 67 505 603 · www.cortex.eu
+  <div class="foot-in">
+    <div>© SIA CORTEX · Liksnas iela 7, Rīga, Latvia · <a href="tel:+37167505603">+371 67 505 603</a></div>
+    <div><a href="#privacy" data-i18n="f_policy">Privacy Policy</a> · <a href="#delete" data-i18n="f_delete">Delete data</a></div>
+  </div>
 </footer>
 
 <script>
-(function(){
-  var langs=['en','lv','ru'];
-  function setLang(l){
-    langs.forEach(function(x){
-      document.getElementById('pp-'+x).hidden=(x!==l);
-    });
-    document.querySelectorAll('.lang button').forEach(function(b){
-      b.classList.toggle('active',b.dataset.lang===l);
-    });
-    document.documentElement.lang=l;
-    try{localStorage.setItem('pp_lang',l);}catch(e){}
+const i18n = {
+  en: {
+    nav_products:"Products", nav_support:"Support", nav_contact:"Contact",
+    eyebrow:"Mobile app · Defendex", title:"Privacy Policy",
+    lead:"How the Defendex app and the CORTEX monitoring platform handle your data — and how to delete it.",
+    effective:"Effective date", version:"Version", toc:"Contents",
+    s1:"1. Who we are", s2:"2. What data we process", s3:"3. Why and on what basis", s4:"4. Third parties",
+    s5:"5. Storage and security", s6:"6. Your rights", s7:"7. App permissions", s8:"8. Changes", s9:"Delete account & data",
+    h_policy:"Privacy Policy of the Defendex app",
+    intro:"Defendex is a mobile application for owners of security systems built on CORTEX equipment. It shows the status of your sites, delivers alarm notifications and lets you arm and disarm your system. This policy explains which data is processed when you use the app, for what purpose, and what choices you have.",
+    who_1:"The Defendex app and the monitoring platform behind it are developed and operated by <strong>SIA CORTEX</strong>, Liksnas iela 7, Rīga, Latvia (hereinafter \"CORTEX\", \"we\").",
+    who_2:"Your account and access to specific sites are created by the <strong>security company that services your site</strong>. For account data and site events, that company is the data controller; CORTEX operates the platform on its behalf as a processor and is the controller for the technical data described below (e.g. push tokens).",
+    t_data:"Data", t_source:"Source", t_purpose:"Purpose",
+    d1:"Username and password (password is stored only as a hash)", d1s:"Entered by you / issued by the security company", d1p:"Sign-in and access to your sites",
+    d2:"Push notification token (an identifier of the app installation on your device) and platform (Android/iOS)", d2s:"Generated by Google Firebase on your device", d2p:"Delivering alarm and status notifications to your phone",
+    d3:"Site events and statuses (armed/disarmed, alarms, zones, mains and battery, communication tests)", d3s:"Your security equipment via the monitoring platform", d3p:"Showing status and event history; sending notifications",
+    d4:"Commands you send (arm/disarm) with time and user ID", d4s:"Your actions in the app", d4p:"Executing the command and keeping an audit log of who armed/disarmed the site",
+    d5:"Notification preferences and interface language", d5s:"Your settings in the app", d5p:"Showing the app the way you configured it",
+    d6:"Technical request data (IP address, time, app version)", d6s:"Automatically, when the app connects to the server", d6p:"Security, troubleshooting, protection against abuse",
+    data_not:"<strong>We do not collect</strong> your location, contacts, photos, files, browsing history, health or financial data. The camera is used only to scan a QR code on your device; the image is not sent anywhere. Video from site cameras is streamed for viewing only and is not stored on our servers by the app.",
+    why_1:"<strong>Performance of the service</strong> (GDPR Art. 6(1)(b)): sign-in, status display, arming/disarming, notifications — this is what the app is for.",
+    why_2:"<strong>Legitimate interest</strong> (Art. 6(1)(f)): security of the platform, technical logs, audit log of commands — so that both you and the security company can see who did what with the system.",
+    why_3:"<strong>Your choice</strong>: push notifications require your permission on the device; you can switch categories on the \"Notifications\" screen or revoke the permission in the system settings at any time.",
+    third_1:"<strong>Google Firebase Cloud Messaging</strong> (Google Ireland Ltd.) — delivers push notifications. Google receives the push token and the notification content (site name and event text) solely to deliver it to your device. Google acts as our processor. <a href=\"https://firebase.google.com/support/privacy\" target=\"_blank\" rel=\"noopener\">Firebase privacy</a>.",
+    third_2:"<strong>Your security company</strong> — sees the events and statuses of the sites it services and the commands sent to them (this is the essence of the monitoring service).",
+    third_3:"We do not sell personal data and do not share it with anyone for advertising.",
+    store_1:"The data is stored on servers located in the European Union.",
+    store_2:"Connection between the app and the server is encrypted (HTTPS/TLS). Passwords are stored as hashes; sign-in credentials on the device are kept in the secure storage (Android Keystore).",
+    store_3:"Retention: account data — while the account exists; push token — until you sign out or uninstall the app (invalid tokens are removed automatically); site events — for the retention period set by your security company's contract, after which they are deleted or anonymised.",
+    rights_1:"Under the GDPR you may request access to your data, its rectification or erasure, restriction of processing, data portability, and object to processing based on legitimate interest. You also have the right to lodge a complaint with the supervisory authority — in Latvia, Datu valsts inspekcija (dvi.gov.lv).",
+    rights_2:"To exercise these rights contact your security company or CORTEX using the details below. We respond within 30 days.",
+    t_perm:"Permission", t_why:"Why",
+    p1:"Connection to the monitoring server", p2:"Showing push notifications (Android 13+)", p3:"Scanning a QR code when adding a site — locally only",
+    p4:"Optional sign-in by fingerprint/face — processed by the OS, biometric data never leaves the device", p5:"Vibration on alarm",
+    changes_1:"We may update this policy when the app changes. The current version is always available at this address; the effective date is shown at the top of the page. Material changes will be announced in the app.",
+    h_delete:"Deleting your account and data",
+    del_intro:"You can request deletion of your Defendex account and the personal data associated with it at any time.",
+    del_1:"<strong>Sign out of the app</strong> (\"Sign out\" in the menu). This immediately removes the push token from the server — notifications to this phone stop.",
+    del_2:"<strong>Send a deletion request</strong> to your security company or to CORTEX (contacts below) with the subject \"Defendex — delete account\" and your username. No other data is needed.",
+    del_3:"<strong>Within 30 days</strong> we delete the account, its site assignments, notification settings and push tokens. Site event history stays with the security company for the contractual retention period (it is data about the site, not about you) and is anonymised from your account.",
+    del_4:"<strong>Uninstall the app</strong> to remove all locally stored data (settings, cached events, saved credentials).",
+    del_note:"If the account was created for you by a security company, it may need to confirm the request — deletion means losing access to monitoring of your site.",
+    del_btn:"Send deletion request",
+    h_contact:"Contact", c_company:"Operator of the platform", c_phone:"Phone", c_email:"Privacy requests", c_web:"Website",
+    f_policy:"Privacy Policy", f_delete:"Delete data"
+  },
+  ru: {
+    nav_products:"Продукты", nav_support:"Поддержка", nav_contact:"Контакты",
+    eyebrow:"Мобильное приложение · Defendex", title:"Политика конфиденциальности",
+    lead:"Как приложение Defendex и платформа мониторинга CORTEX обращаются с вашими данными — и как их удалить.",
+    effective:"Дата вступления в силу", version:"Версия", toc:"Содержание",
+    s1:"1. Кто мы", s2:"2. Какие данные обрабатываем", s3:"3. Зачем и на каком основании", s4:"4. Третьи стороны",
+    s5:"5. Хранение и защита", s6:"6. Ваши права", s7:"7. Разрешения приложения", s8:"8. Изменения", s9:"Удалить аккаунт и данные",
+    h_policy:"Политика конфиденциальности приложения Defendex",
+    intro:"Defendex — мобильное приложение для владельцев охранных систем на оборудовании CORTEX. Оно показывает статус ваших объектов, доставляет уведомления о тревогах и позволяет ставить и снимать систему с охраны. Эта политика объясняет, какие данные обрабатываются при использовании приложения, с какой целью и какой выбор у вас есть.",
+    who_1:"Приложение Defendex и платформа мониторинга разрабатываются и эксплуатируются <strong>SIA CORTEX</strong>, Liksnas iela 7, Rīga, Латвия (далее — «CORTEX», «мы»).",
+    who_2:"Вашу учётную запись и доступ к конкретным объектам создаёт <strong>охранная компания, обслуживающая ваш объект</strong>. В отношении данных аккаунта и событий объекта она является контролёром данных; CORTEX эксплуатирует платформу от её имени как обработчик и является контролёром технических данных, описанных ниже (например, push-токенов).",
+    t_data:"Данные", t_source:"Источник", t_purpose:"Цель",
+    d1:"Логин и пароль (пароль хранится только в виде хэша)", d1s:"Вводите вы / выдаёт охранная компания", d1p:"Вход и доступ к вашим объектам",
+    d2:"Push-токен (идентификатор установки приложения на вашем устройстве) и платформа (Android/iOS)", d2s:"Создаётся Google Firebase на вашем устройстве", d2p:"Доставка уведомлений о тревогах и статусах на телефон",
+    d3:"События и статусы объектов (постановка/снятие, тревоги, зоны, питание и батарея, тесты связи)", d3s:"Ваше охранное оборудование через платформу мониторинга", d3p:"Показ статуса и истории событий; отправка уведомлений",
+    d4:"Отправленные вами команды (постановка/снятие) с временем и ID пользователя", d4s:"Ваши действия в приложении", d4p:"Выполнение команды и журнал: кто ставил/снимал объект",
+    d5:"Настройки уведомлений и язык интерфейса", d5s:"Ваши настройки в приложении", d5p:"Показ приложения так, как вы его настроили",
+    d6:"Технические данные запросов (IP-адрес, время, версия приложения)", d6s:"Автоматически при подключении приложения к серверу", d6p:"Безопасность, диагностика, защита от злоупотреблений",
+    data_not:"<strong>Мы не собираем</strong> ваше местоположение, контакты, фото, файлы, историю браузера, данные о здоровье и финансах. Камера используется только для сканирования QR-кода на устройстве; изображение никуда не передаётся. Видео с камер объекта транслируется только для просмотра и приложением на наших серверах не сохраняется.",
+    why_1:"<strong>Исполнение услуги</strong> (GDPR, ст. 6(1)(b)): вход, показ статуса, постановка/снятие, уведомления — то, для чего приложение существует.",
+    why_2:"<strong>Законный интерес</strong> (ст. 6(1)(f)): безопасность платформы, технические журналы, журнал команд — чтобы и вы, и охранная компания видели, кто и что делал с системой.",
+    why_3:"<strong>Ваш выбор</strong>: push-уведомления требуют вашего разрешения на устройстве; категории можно переключать на экране «Уведомления», а разрешение — отозвать в настройках системы в любой момент.",
+    third_1:"<strong>Google Firebase Cloud Messaging</strong> (Google Ireland Ltd.) — доставляет push-уведомления. Google получает push-токен и содержимое уведомления (название объекта и текст события) исключительно для доставки на ваше устройство и выступает нашим обработчиком. <a href=\"https://firebase.google.com/support/privacy\" target=\"_blank\" rel=\"noopener\">Конфиденциальность Firebase</a>.",
+    third_2:"<strong>Ваша охранная компания</strong> — видит события и статусы обслуживаемых объектов и отправленные им команды (в этом суть услуги мониторинга).",
+    third_3:"Мы не продаём персональные данные и никому не передаём их для рекламы.",
+    store_1:"Данные хранятся на серверах, расположенных в Европейском союзе.",
+    store_2:"Соединение приложения с сервером зашифровано (HTTPS/TLS). Пароли хранятся в виде хэшей; учётные данные на устройстве — в защищённом хранилище (Android Keystore).",
+    store_3:"Сроки: данные аккаунта — пока существует аккаунт; push-токен — до выхода из аккаунта или удаления приложения (недействительные токены удаляются автоматически); события объекта — в течение срока, установленного договором с вашей охранной компанией, после чего удаляются или обезличиваются.",
+    rights_1:"Согласно GDPR вы можете запросить доступ к своим данным, их исправление или удаление, ограничение обработки, перенос данных и возразить против обработки на основании законного интереса. Вы также вправе подать жалобу в надзорный орган — в Латвии это Datu valsts inspekcija (dvi.gov.lv).",
+    rights_2:"Для реализации прав обратитесь в свою охранную компанию или в CORTEX по контактам ниже. Мы отвечаем в течение 30 дней.",
+    t_perm:"Разрешение", t_why:"Зачем",
+    p1:"Соединение с сервером мониторинга", p2:"Показ push-уведомлений (Android 13+)", p3:"Сканирование QR-кода при добавлении объекта — только локально",
+    p4:"Необязательный вход по отпечатку/лицу — обрабатывается ОС, биометрия не покидает устройство", p5:"Вибрация при тревоге",
+    changes_1:"Мы можем обновлять политику при изменении приложения. Актуальная версия всегда доступна по этому адресу; дата вступления указана вверху страницы. О существенных изменениях сообщим в приложении.",
+    h_delete:"Удаление аккаунта и данных",
+    del_intro:"Вы можете в любой момент запросить удаление аккаунта Defendex и связанных с ним персональных данных.",
+    del_1:"<strong>Выйдите из аккаунта в приложении</strong> («Выйти» в меню). Push-токен сразу удаляется с сервера — уведомления на этот телефон прекращаются.",
+    del_2:"<strong>Отправьте запрос на удаление</strong> в свою охранную компанию или в CORTEX (контакты ниже) с темой «Defendex — удалить аккаунт» и вашим логином. Других данных не нужно.",
+    del_3:"<strong>В течение 30 дней</strong> мы удалим аккаунт, привязки объектов, настройки уведомлений и push-токены. История событий объекта остаётся у охранной компании на договорной срок (это данные об объекте, а не о вас) и отвязывается от вашего аккаунта.",
+    del_4:"<strong>Удалите приложение</strong>, чтобы стереть все локальные данные (настройки, кэш событий, сохранённые учётные данные).",
+    del_note:"Если аккаунт вам создала охранная компания, ей может потребоваться подтвердить запрос — удаление означает потерю доступа к мониторингу вашего объекта.",
+    del_btn:"Отправить запрос на удаление",
+    h_contact:"Контакты", c_company:"Оператор платформы", c_phone:"Телефон", c_email:"Запросы по данным", c_web:"Сайт",
+    f_policy:"Политика конфиденциальности", f_delete:"Удалить данные"
+  },
+  lv: {
+    nav_products:"Produkti", nav_support:"Atbalsts", nav_contact:"Kontakti",
+    eyebrow:"Mobilā lietotne · Defendex", title:"Privātuma politika",
+    lead:"Kā lietotne Defendex un CORTEX monitoringa platforma apstrādā jūsu datus — un kā tos dzēst.",
+    effective:"Spēkā no", version:"Versija", toc:"Saturs",
+    s1:"1. Kas mēs esam", s2:"2. Kādus datus apstrādājam", s3:"3. Kāpēc un uz kāda pamata", s4:"4. Trešās personas",
+    s5:"5. Glabāšana un drošība", s6:"6. Jūsu tiesības", s7:"7. Lietotnes atļaujas", s8:"8. Izmaiņas", s9:"Dzēst kontu un datus",
+    h_policy:"Lietotnes Defendex privātuma politika",
+    intro:"Defendex ir mobilā lietotne apsardzes sistēmu īpašniekiem, kuru pamatā ir CORTEX iekārtas. Tā rāda jūsu objektu statusu, piegādā trauksmes paziņojumus un ļauj ieslēgt un atslēgt apsardzi. Šī politika skaidro, kādi dati tiek apstrādāti, lietojot lietotni, kādam nolūkam un kādas izvēles jums ir.",
+    who_1:"Lietotni Defendex un monitoringa platformu izstrādā un uztur <strong>SIA CORTEX</strong>, Līksnas iela 7, Rīga, Latvija (turpmāk — «CORTEX», «mēs»).",
+    who_2:"Jūsu kontu un piekļuvi konkrētiem objektiem izveido <strong>apsardzes uzņēmums, kas apkalpo jūsu objektu</strong>. Attiecībā uz konta datiem un objekta notikumiem tas ir datu pārzinis; CORTEX uztur platformu tā vārdā kā apstrādātājs un ir pārzinis zemāk aprakstītajiem tehniskajiem datiem (piemēram, push žetoniem).",
+    t_data:"Dati", t_source:"Avots", t_purpose:"Nolūks",
+    d1:"Lietotājvārds un parole (parole tiek glabāta tikai kā jaucējkods)", d1s:"Ievadāt jūs / izsniedz apsardzes uzņēmums", d1p:"Pieteikšanās un piekļuve jūsu objektiem",
+    d2:"Push paziņojumu žetons (lietotnes instalācijas identifikators jūsu ierīcē) un platforma (Android/iOS)", d2s:"Ģenerē Google Firebase jūsu ierīcē", d2p:"Trauksmju un statusu paziņojumu piegāde uz tālruni",
+    d3:"Objektu notikumi un statusi (ieslēgta/atslēgta apsardze, trauksmes, zonas, tīkls un akumulators, sakaru testi)", d3s:"Jūsu apsardzes iekārtas caur monitoringa platformu", d3p:"Statusa un notikumu vēstures rādīšana; paziņojumu sūtīšana",
+    d4:"Jūsu nosūtītās komandas (ieslēgt/atslēgt) ar laiku un lietotāja ID", d4s:"Jūsu darbības lietotnē", d4p:"Komandas izpilde un žurnāls: kurš ieslēdza/atslēdza objektu",
+    d5:"Paziņojumu iestatījumi un saskarnes valoda", d5s:"Jūsu iestatījumi lietotnē", d5p:"Lietotnes rādīšana tā, kā esat iestatījis",
+    d6:"Tehniskie pieprasījumu dati (IP adrese, laiks, lietotnes versija)", d6s:"Automātiski, lietotnei pieslēdzoties serverim", d6p:"Drošība, problēmu novēršana, aizsardzība pret ļaunprātīgu izmantošanu",
+    data_not:"<strong>Mēs nevācam</strong> jūsu atrašanās vietu, kontaktus, fotoattēlus, failus, pārlūkošanas vēsturi, veselības vai finanšu datus. Kamera tiek izmantota tikai QR koda skenēšanai ierīcē; attēls nekur netiek nosūtīts. Video no objekta kamerām tiek straumēts tikai skatīšanai un lietotne to mūsu serveros neglabā.",
+    why_1:"<strong>Pakalpojuma izpilde</strong> (VDAR 6. panta 1. punkta b) apakšpunkts): pieteikšanās, statusa rādīšana, ieslēgšana/atslēgšana, paziņojumi — tam lietotne ir paredzēta.",
+    why_2:"<strong>Leģitīmās intereses</strong> (6. panta 1. punkta f) apakšpunkts): platformas drošība, tehniskie žurnāli, komandu žurnāls — lai gan jūs, gan apsardzes uzņēmums redzētu, kurš un ko darīja ar sistēmu.",
+    why_3:"<strong>Jūsu izvēle</strong>: push paziņojumiem nepieciešama jūsu atļauja ierīcē; kategorijas var pārslēgt ekrānā «Paziņojumi», bet atļauju — jebkurā brīdī atsaukt sistēmas iestatījumos.",
+    third_1:"<strong>Google Firebase Cloud Messaging</strong> (Google Ireland Ltd.) — piegādā push paziņojumus. Google saņem push žetonu un paziņojuma saturu (objekta nosaukumu un notikuma tekstu) tikai piegādei uz jūsu ierīci un darbojas kā mūsu apstrādātājs. <a href=\"https://firebase.google.com/support/privacy\" target=\"_blank\" rel=\"noopener\">Firebase privātums</a>.",
+    third_2:"<strong>Jūsu apsardzes uzņēmums</strong> — redz apkalpoto objektu notikumus un statusus, kā arī tiem nosūtītās komandas (tā ir monitoringa pakalpojuma būtība).",
+    third_3:"Mēs nepārdodam personas datus un nevienam tos nenododam reklāmas nolūkos.",
+    store_1:"Dati tiek glabāti serveros, kas atrodas Eiropas Savienībā.",
+    store_2:"Savienojums starp lietotni un serveri ir šifrēts (HTTPS/TLS). Paroles tiek glabātas kā jaucējkodi; pieteikšanās dati ierīcē — drošajā krātuvē (Android Keystore).",
+    store_3:"Glabāšanas termiņi: konta dati — kamēr pastāv konts; push žetons — līdz izrakstīšanās vai lietotnes dzēšanai (nederīgi žetoni tiek dzēsti automātiski); objekta notikumi — jūsu apsardzes uzņēmuma līgumā noteikto termiņu, pēc kura tie tiek dzēsti vai anonimizēti.",
+    rights_1:"Saskaņā ar VDAR jūs varat pieprasīt piekļuvi saviem datiem, to labošanu vai dzēšanu, apstrādes ierobežošanu, datu pārnesamību un iebilst pret apstrādi, kas balstīta uz leģitīmajām interesēm. Jums ir arī tiesības iesniegt sūdzību uzraudzības iestādei — Latvijā tā ir Datu valsts inspekcija (dvi.gov.lv).",
+    rights_2:"Lai īstenotu šīs tiesības, sazinieties ar savu apsardzes uzņēmumu vai CORTEX, izmantojot zemāk norādītos kontaktus. Mēs atbildam 30 dienu laikā.",
+    t_perm:"Atļauja", t_why:"Kāpēc",
+    p1:"Savienojums ar monitoringa serveri", p2:"Push paziņojumu rādīšana (Android 13+)", p3:"QR koda skenēšana, pievienojot objektu — tikai lokāli",
+    p4:"Neobligāta pieteikšanās ar pirksta nospiedumu/seju — apstrādā OS, biometrijas dati nepamet ierīci", p5:"Vibrācija trauksmes gadījumā",
+    changes_1:"Mēs varam atjaunināt politiku, mainoties lietotnei. Aktuālā versija vienmēr pieejama šajā adresē; spēkā stāšanās datums norādīts lapas augšpusē. Par būtiskām izmaiņām paziņosim lietotnē.",
+    h_delete:"Konta un datu dzēšana",
+    del_intro:"Jūs jebkurā brīdī varat pieprasīt Defendex konta un ar to saistīto personas datu dzēšanu.",
+    del_1:"<strong>Izrakstieties no lietotnes</strong> («Iziet» izvēlnē). Push žetons uzreiz tiek dzēsts no servera — paziņojumi uz šo tālruni beidzas.",
+    del_2:"<strong>Nosūtiet dzēšanas pieprasījumu</strong> savam apsardzes uzņēmumam vai CORTEX (kontakti zemāk) ar tēmu «Defendex — dzēst kontu» un savu lietotājvārdu. Citi dati nav nepieciešami.",
+    del_3:"<strong>30 dienu laikā</strong> mēs dzēšam kontu, tā objektu piesaistes, paziņojumu iestatījumus un push žetonus. Objekta notikumu vēsture paliek apsardzes uzņēmumam līguma termiņu (tie ir dati par objektu, ne par jums) un tiek atsaistīta no jūsu konta.",
+    del_4:"<strong>Dzēsiet lietotni</strong>, lai noņemtu visus lokāli glabātos datus (iestatījumus, notikumu kešatmiņu, saglabātos pieteikšanās datus).",
+    del_note:"Ja kontu jums izveidoja apsardzes uzņēmums, tam var būt jāapstiprina pieprasījums — dzēšana nozīmē piekļuves zaudēšanu jūsu objekta monitoringam.",
+    del_btn:"Nosūtīt dzēšanas pieprasījumu",
+    h_contact:"Kontakti", c_company:"Platformas uzturētājs", c_phone:"Tālrunis", c_email:"Datu pieprasījumi", c_web:"Tīmekļa vietne",
+    f_policy:"Privātuma politika", f_delete:"Dzēst datus"
   }
-  document.querySelectorAll('.lang button').forEach(function(b){
-    b.addEventListener('click',function(){setLang(b.dataset.lang);});
+};
+function applyLang(lang){
+  if(!i18n[lang]) lang='lv';
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const v=i18n[lang][el.dataset.i18n]; if(v!==undefined) el.innerHTML=v;
   });
-  var saved=null;
-  try{saved=localStorage.getItem('pp_lang');}catch(e){}
-  if(saved&&langs.indexOf(saved)>-1)setLang(saved);
+  document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on', b.dataset.lang===lang));
+  try{localStorage.setItem('lang',lang);}catch(e){}
+}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>applyLang(b.dataset.lang)));
+(function(){
+  const q=new URLSearchParams(location.search).get('lang');
+  let saved=null; try{saved=localStorage.getItem('lang');}catch(e){}
+  const nav=(navigator.language||'lv').slice(0,2).toLowerCase();
+  applyLang(q || saved || (i18n[nav]?nav:'en'));  // EN по умолчанию — для проверки Play
 })();
 </script>
-
 </body>
 </html>
